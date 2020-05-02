@@ -97,7 +97,7 @@ input[type="radio"].visually-hidden {
   color: #f38181;
   transition: color 200ms linear; 
 }
-/*---Подчёркивание с transition---*/
+
 .menu-item__link::after{
   content: "";
   background-color: #f38181;
@@ -116,20 +116,7 @@ input[type="radio"].visually-hidden {
   transition: opacity 200ms linear;
   opacity: 1;
 }
-/*---Подчёркивание без transition---*/
-/*.menu-item__link:hover::after,
-.menu-item__link:focus::after {
-  transition: opacity 200ms linear;
-  opacity: 1; 
-  position: absolute;
-  top: 100%;
-  margin-top: 8px;
-  content: "";
-  display: block;
-  width: 100%;
-  border-bottom: 3px solid #f38181;
-}*/
-/*--------Section services----------*/
+
 .services {
   padding-bottom: 90px;
 }
@@ -221,7 +208,6 @@ input[type="radio"].visually-hidden {
   line-height: 24px;
 }
 
-/*--------Section Team-------------*/
 .team {
   padding-bottom: 80px; 
 }
@@ -245,6 +231,9 @@ input[type="radio"].visually-hidden {
 
 .team-item__wrapper {
   position: relative;
+  transition-property: transform, box-shadow;
+  transition-duration: 200ms;
+  transition-timing-function: linear; 
 }
 
 .overlay-team {
@@ -262,17 +251,20 @@ input[type="radio"].visually-hidden {
     rgba(252, 227, 138, 0.9) 0%,
     rgba(243, 129, 129, 0.9) 100%
   );
-}
-
-.overlay-team:hover,
-.overlay-team:focus-within
- {
-  opacity: 1;
-  transition-property: opacity transform, box-shadow;
+  transition-property: opacity;
   transition-duration: 200ms;
   transition-timing-function: linear;  
-  transform: translate(-10px,-10px);
+  
+}
+
+.team-item__wrapper:hover .overlay-team,
+.team-item__wrapper:focus-within .overlay-team {
+  opacity: 1;  
+}
+
+.team-item__wrapper:hover {
   box-shadow: 10px 10px 0px 0px #95E1D3; 
+  transform: translate(-10px,-10px);
 }
 
 .overlay-team-item {
@@ -326,8 +318,6 @@ input[type="radio"].visually-hidden {
   color: #999999;
   margin: 0px;
 }
-
-/*-------------footer------------*/
 
 .footer {
   border-top: 1px solid #E5E5E5;
