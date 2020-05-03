@@ -6,7 +6,8 @@
 
 h1,
 h2,
-h3, p {
+h3,
+p {
   margin: 0;
 }
 
@@ -34,7 +35,8 @@ ol {
   list-style: none;
 }
 
-.visually-hidden:not(:focus):not(:active), input[type="checkbox"].visually-hidden, 
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
 input[type="radio"].visually-hidden {
   position: absolute;
   width: 1px;
@@ -95,10 +97,10 @@ input[type="radio"].visually-hidden {
 .menu-item__link:hover,
 .menu-item__link:focus {
   color: #f38181;
-  transition: color 200ms linear; 
+  transition: color 200ms linear;
 }
 
-.menu-item__link::after{
+.menu-item__link::after {
   content: "";
   background-color: #f38181;
   position: absolute;
@@ -153,7 +155,7 @@ input[type="radio"].visually-hidden {
   flex-wrap: wrap;
 }
 
-.clock{
+.clock {
   background: url(../img/icon-clock.png);
 }
 
@@ -209,7 +211,7 @@ input[type="radio"].visually-hidden {
 }
 
 .team {
-  padding-bottom: 80px; 
+  padding-bottom: 80px;
 }
 
 .team-text {
@@ -233,7 +235,7 @@ input[type="radio"].visually-hidden {
   position: relative;
   transition-property: transform, box-shadow;
   transition-duration: 200ms;
-  transition-timing-function: linear; 
+  transition-timing-function: linear;
 }
 
 .overlay-team {
@@ -253,18 +255,17 @@ input[type="radio"].visually-hidden {
   );
   transition-property: opacity;
   transition-duration: 200ms;
-  transition-timing-function: linear;  
-  
+  transition-timing-function: linear;
 }
 
 .team-item__wrapper:hover .overlay-team,
 .team-item__wrapper:focus-within .overlay-team {
-  opacity: 1;  
+  opacity: 1;
 }
 
 .team-item__wrapper:hover {
-  box-shadow: 10px 10px 0px 0px #95E1D3; 
-  transform: translate(-10px,-10px);
+  box-shadow: 10px 10px 0px 0px #95e1d3;
+  transform: translate(-10px, -10px);
 }
 
 .overlay-team-item {
@@ -273,33 +274,33 @@ input[type="radio"].visually-hidden {
   height: 56px;
   background-repeat: no-repeat;
   background-position: center;
-  background-color: #FCE38A; 
+  background-color: #fce38a;
 }
 
 .overlay-team-item:not(:last-child) {
-  border-right: 1px solid #F38181;
+  border-right: 1px solid #f38181;
 }
 
 .overlay-team-item:first-child {
-  background-image: url(../img/social/facebook.png);  
+  background-image: url(../img/social/facebook.png);
 }
 
-.overlay-team-item:nth-child(2){
-  background-image: url(../img/social/twitter.png);  
+.overlay-team-item:nth-child(2) {
+  background-image: url(../img/social/twitter.png);
 }
 
-.overlay-team-item:nth-child(3){
-  background-image: url(../img/social/pinterest.png);  
+.overlay-team-item:nth-child(3) {
+  background-image: url(../img/social/pinterest.png);
 }
 
 .overlay-team-item:last-child {
-  background-image: url(../img/social/instagram.png);  
+  background-image: url(../img/social/instagram.png);
 }
 
 .overlay-team-item:hover,
 .overlay-team-item:focus {
   transition-property: background-color;
-  background-color: #95E1D3;
+  background-color: #95e1d3;
 }
 
 .team-list__name {
@@ -320,11 +321,11 @@ input[type="radio"].visually-hidden {
 }
 
 .footer {
-  border-top: 1px solid #E5E5E5;
+  border-top: 1px solid #e5e5e5;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 10px; 
+  padding: 10px 10px;
 }
 
 .footer-text {
@@ -335,7 +336,7 @@ input[type="radio"].visually-hidden {
 
 .footer-link {
   text-decoration: none;
-  color: #F38181;
+  color: #f38181;
 }
 
 form {
@@ -344,21 +345,20 @@ form {
 
 input {
   padding-left: 12px;
-  font-family: "Roboto LightItalic"
+  font-family: "Roboto LightItalic";
   font-size: 15px;
-  border: 1px solid #E5E5E5;
+  border: 1px solid #e5e5e5;
   height: 40px;
   width: 230px;
-  
 }
 
 input::placeholder {
-  color: #CCCCCC;
+  color: #cccccc;
 }
 
 .form-submit {
-  background-color: #95E1D3;
-  color: #FFFFFF;
+  background-color: #95e1d3;
+  color: #ffffff;
   box-shadow: none;
   border: none;
   height: 40px;
